@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <!--owl carousel css files-->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin:0;
+            font-family: 'Raleway', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        header{
+            background-color: #81ecec;
+            padding: 20px 0;
+        }
+        .container{
+            max-width: 780px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .slider{
+            position: relative;
+        }
+        .description{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+        h2{
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+        }
+        .btn{
+            background-color:#81ecec;
+            padding: 15px 20px;
+            border-radius: 25px;
+        }
+    </style>
+
+    
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <a href="#">Slider</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="slider">
+                    <img src="https://images.unsplash.com/photo-1587815280777-90694ad8c4ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                    <div class="description">
+                        <div>
+                            <h2>5 guidelines from WHO to prevent Covid-19</h2>
+                            <a href="#" class="btn">Learn More !</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <img src="https://images.unsplash.com/photo-1587815280777-90694ad8c4ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                    <div class="description">
+                        <div>
+                            <h2>5 guidelines from WHO to prevent Covid-19</h2>
+                            <a href="#" class="btn">Learn More !</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <img src="https://images.unsplash.com/photo-1587815280777-90694ad8c4ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                    <div class="description">
+                        <div>
+                            <h2>5 guidelines from WHO to prevent Covid-19</h2>
+                            <a href="#" class="btn">Learn More !</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                items:1,
+                autoplay:true,
+                autoplaySpeed:2000,
+                loop:true
+            });
+        })
+    </script>
+</body>
+</html>
